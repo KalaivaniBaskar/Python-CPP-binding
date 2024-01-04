@@ -1,0 +1,26 @@
+kalaivani@kalaivani-ThinkPad-L14-Gen-3:~/Documents/PyBinding/build$ ipython3
+Python 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.31.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: import mod_name
+
+In [2]: dir(mod_name)
+Out[2]: 
+['__doc__',
+ '__file__',
+ '__loader__',
+ '__name__',
+ '__package__',
+ '__spec__',
+ 'some_fn_in_python']
+
+In [3]: mod_name.__doc__
+Out[3]: 'This is setting docstring for module.'
+
+In [4]: mod_name.some_fn_in_python?
+Docstring: some_fn_in_python(arg0: float, arg1: float) -> float
+Type:      builtin_function_or_method
+
+In [5]: mod_name.some_fn_in_python(2.5,7.5)
+Out[5]: 10.0
