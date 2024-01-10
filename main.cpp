@@ -1,7 +1,7 @@
 #include <pybind11/pybind11.h>
 #include <pybind11/stl.h>
 #include <vector>
-// make sure to clone the pybind11 repo grom git in the project folder to get the header files
+// make sure to clone the pybind11 repo from git in the project folder to get the header files
 
 namespace py = pybind11;
 

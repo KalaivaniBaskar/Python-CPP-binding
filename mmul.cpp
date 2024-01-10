@@ -5,6 +5,7 @@
 #define __CL_ENABLE_EXCEPTIONS
 #include "CL/opencl.hpp"
 // clone repo for OpenCL header git clone --recursive https://github.com/KhronosGroup/OpenCL-CLHPP
+// previously used CPP common folder has openCL1.2 version headers
 #include <iostream>
 // pick up device type from compiler command line or from the default type
 #ifndef DEVICE
@@ -77,6 +78,7 @@ py::array_t<float> mat_mul(py::array_t<float> input_array1, py::array_t<float> i
         cl::Program program(context, kernelsource, true);
 
         // Create the compute kernel from the program
+        // for openCL3.0 ver use compatibilty for make_kernel from 1.2 ver
         cl::compatibility::make_kernel<int, cl::Buffer, cl::Buffer, cl::Buffer> naive_mmul(program, "mmul");
 
         cl::NDRange global(rows, cols);
