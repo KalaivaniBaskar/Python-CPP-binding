@@ -465,10 +465,7 @@ CMakeFiles/mmul_mod.dir/mmul.cpp.o: ../mmul.cpp \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/bits/stl_numeric.h \
   /usr/include/c++/11/pstl/glue_numeric_defs.h \
-  ../Cpp_common/cl.hpp \
-  /usr/include/GL/gl.h \
-  /usr/include/GL/glext.h \
-  /usr/include/KHR/khrplatform.h \
+  ../OpenCL-CLHPP/include/CL/opencl.hpp \
   /usr/include/CL/opencl.h \
   /usr/include/CL/cl.h \
   /usr/include/CL/cl_version.h \
@@ -478,25 +475,8 @@ CMakeFiles/mmul_mod.dir/mmul.cpp.o: ../mmul.cpp \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
   /usr/include/CL/cl_gl.h \
-  /usr/include/CL/cl_ext.h \
-  ../Cpp_common/util.hpp \
-  /usr/include/c++/11/iostream \
-  /usr/include/c++/11/fstream \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  ../Cpp_common/err_code.h \
-  ../Cpp_common/device_picker.hpp
+  /usr/include/CL/cl_ext.h
 
-
-../Cpp_common/device_picker.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
-
-/usr/include/c++/11/fstream:
-
-../Cpp_common/util.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
 
@@ -504,9 +484,7 @@ CMakeFiles/mmul_mod.dir/mmul.cpp.o: ../mmul.cpp \
 
 /usr/include/CL/cl.h:
 
-/usr/include/KHR/khrplatform.h:
-
-../Cpp_common/cl.hpp:
+../OpenCL-CLHPP/include/CL/opencl.hpp:
 
 /usr/include/c++/11/bits/stl_numeric.h:
 
@@ -515,8 +493,6 @@ CMakeFiles/mmul_mod.dir/mmul.cpp.o: ../mmul.cpp \
 /usr/include/c++/11/istream:
 
 /usr/include/c++/11/sstream:
-
-/usr/include/GL/glext.h:
 
 /usr/include/c++/11/variant:
 
@@ -591,8 +567,6 @@ CMakeFiles/mmul_mod.dir/mmul.cpp.o: ../mmul.cpp \
 /usr/include/c++/11/bits/stream_iterator.h:
 
 ../pybind11/include/pybind11/pytypes.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
 
 ../pybind11/include/pybind11/detail/type_caster_base.h:
 
@@ -824,8 +798,6 @@ CMakeFiles/mmul_mod.dir/mmul.cpp.o: ../mmul.cpp \
 
 /usr/include/c++/11/tr1/poly_laguerre.tcc:
 
-/usr/include/c++/11/bits/codecvt.h:
-
 /usr/include/c++/11/bits/basic_ios.tcc:
 
 /usr/include/c++/11/bits/enable_special_members.h:
@@ -1014,8 +986,6 @@ CMakeFiles/mmul_mod.dir/mmul.cpp.o: ../mmul.cpp \
 
 /usr/include/c++/11/bits/move.h:
 
-/usr/include/c++/11/iostream:
-
 /usr/include/c++/11/bits/node_handle.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
@@ -1114,8 +1084,6 @@ CMakeFiles/mmul_mod.dir/mmul.cpp.o: ../mmul.cpp \
 
 /usr/include/stdc-predef.h:
 
-/usr/include/c++/11/bits/fstream.tcc:
-
 /usr/include/asm-generic/posix_types.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
@@ -1167,8 +1135,6 @@ CMakeFiles/mmul_mod.dir/mmul.cpp.o: ../mmul.cpp \
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/GL/gl.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
@@ -1429,8 +1395,6 @@ CMakeFiles/mmul_mod.dir/mmul.cpp.o: ../mmul.cpp \
 /usr/include/python3.10/genericaliasobject.h:
 
 /usr/include/python3.10/pyerrors.h:
-
-../Cpp_common/err_code.h:
 
 /usr/include/wctype.h:
 
