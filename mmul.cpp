@@ -3,10 +3,9 @@
 #include <pybind11/numpy.h>
 #include <vector>
 #define __CL_ENABLE_EXCEPTIONS
-#include "cl.hpp"
-#include "util.hpp"
-#include "err_code.h"
-#include "device_picker.hpp"
+#include "CL/opencl.hpp"
+// clone repo for OpenCL header git clone --recursive https://github.com/KhronosGroup/OpenCL-CLHPP
+#include <iostream>
 // pick up device type from compiler command line or from the default type
 #ifndef DEVICE
 #define DEVICE CL_DEVICE_TYPE_GPU
@@ -78,7 +77,7 @@ py::array_t<float> mat_mul(py::array_t<float> input_array1, py::array_t<float> i
         cl::Program program(context, kernelsource, true);
 
         // Create the compute kernel from the program
-        cl::make_kernel<int, cl::Buffer, cl::Buffer, cl::Buffer> naive_mmul(program, "mmul");
+        cl::compatibility::make_kernel<int, cl::Buffer, cl::Buffer, cl::Buffer> naive_mmul(program, "mmul");
 
         cl::NDRange global(rows, cols);
             naive_mmul(cl::EnqueueArgs(queue, global),

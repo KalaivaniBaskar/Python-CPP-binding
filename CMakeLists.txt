@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.2)
 project(pybind)
 add_subdirectory(pybind11) 
 # Set the path to your OpenCL headers
-set(OPENCL_INCLUDE_DIR "./Cpp_common")
+set(OPENCL_INCLUDE_DIR "./OpenCL-CLHPP/include")
 
 # Set the path to your OpenCL libraries
 set(OPENCL_LIB_DIR "/usr/lib/x86_64-linux-gnu")
