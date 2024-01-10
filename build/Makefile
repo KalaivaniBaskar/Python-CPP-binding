@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mod_name
+# Target rules for targets named mmul_mod
 
 # Build rule for target.
-mod_name: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mod_name
-.PHONY : mod_name
+mmul_mod: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mmul_mod
+.PHONY : mmul_mod
 
 # fast build rule for target.
-mod_name/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mod_name.dir/build.make CMakeFiles/mod_name.dir/build
-.PHONY : mod_name/fast
+mmul_mod/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmul_mod.dir/build.make CMakeFiles/mmul_mod.dir/build
+.PHONY : mmul_mod/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+mmul.o: mmul.cpp.o
+.PHONY : mmul.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mod_name.dir/build.make CMakeFiles/mod_name.dir/main.cpp.o
-.PHONY : main.cpp.o
+mmul.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmul_mod.dir/build.make CMakeFiles/mmul_mod.dir/mmul.cpp.o
+.PHONY : mmul.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+mmul.i: mmul.cpp.i
+.PHONY : mmul.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mod_name.dir/build.make CMakeFiles/mod_name.dir/main.cpp.i
-.PHONY : main.cpp.i
+mmul.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmul_mod.dir/build.make CMakeFiles/mmul_mod.dir/mmul.cpp.i
+.PHONY : mmul.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+mmul.s: mmul.cpp.s
+.PHONY : mmul.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mod_name.dir/build.make CMakeFiles/mod_name.dir/main.cpp.s
-.PHONY : main.cpp.s
+mmul.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mmul_mod.dir/build.make CMakeFiles/mmul_mod.dir/mmul.cpp.s
+.PHONY : mmul.cpp.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... mod_name"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... mmul_mod"
+	@echo "... mmul.o"
+	@echo "... mmul.i"
+	@echo "... mmul.s"
 .PHONY : help
 
 

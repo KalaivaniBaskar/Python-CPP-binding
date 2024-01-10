@@ -1,4 +1,6 @@
 #include <pybind11/pybind11.h>
+#include <pybind11/stl.h>
+#include <vector>
 // make sure to clone the pybind11 repo grom git in the project folder to get the header files
 
 namespace py = pybind11;
@@ -15,6 +17,20 @@ public:
     float multiply(float input){
         return multiplier * input;
     }
+
+    // pybind automatically does list to vector conversion vice versa
+    std::vector<float> multiply_list(std::vector<float> items){
+        for(auto i = 0; i < items.size(); i++){
+            items[i] = multiply(items.at(i));
+        }
+        return items;
+    } 
+
+    // alternately we can also use python datastruct in c++ 
+    // returns a tuple
+    py::tuple multiply_two(float one, float two){
+        return py::make_tuple(multiply(one), multiply(two));
+    }
 };
 // module(name, variablle) - match the module's name given in CMakelists matched the PYBIND11_MODULE macro
 PYBIND11_MODULE(mod_name, handle){
@@ -23,12 +39,12 @@ PYBIND11_MODULE(mod_name, handle){
 
     py::class_<SomeClass>(handle, "PySomeClass")
         .def(py::init<float>())
-        .def("multiply", &SomeClass::multiply);
+        .def("multiply", &SomeClass::multiply)
+        .def("multiply_list", &SomeClass::multiply_list)
+        .def("multiply_two", &SomeClass::multiply_two);
         // whatever methods & fields are exposed here in this macro are only accessible in our python code 
         // so make sure to expose the constructor of the class and other methods we need
-}
-
-
+};
 
 // after cmake build and  make list the folder 
 /*

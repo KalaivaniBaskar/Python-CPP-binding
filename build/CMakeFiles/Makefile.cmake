@@ -62,5 +62,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/mod_name.dir/DependInfo.cmake"
+  "CMakeFiles/mmul_mod.dir/DependInfo.cmake"
   )
