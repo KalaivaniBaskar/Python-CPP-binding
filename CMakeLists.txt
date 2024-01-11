@@ -5,6 +5,7 @@ add_subdirectory(pybind11)
 set(OPENCL_INCLUDE_DIR "./Cpp_common")
 
 # Set the path to your OpenCL libraries
+# on terminal use command: find /usr/lib -name libOpenCL.so
 set(OPENCL_LIB_DIR "/usr/lib/x86_64-linux-gnu")
 
 # Include OpenCL headers

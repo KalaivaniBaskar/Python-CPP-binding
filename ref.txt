@@ -1,3 +1,12 @@
+steps: 
+1. create cMakeLists.txt  in project folder
+2. create build folder in project folder 
+3. run cmake <source> <build> 
+3a. if you are already in build folder, run cmake .. 
+3b. this will generate makefiles in build folder
+4. then run make command 
+5. then run python file 
+
 kalaivani@kalaivani-ThinkPad-L14-Gen-3:~/Documents/PyBinding/build$ ipython3
 Python 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
 Type 'copyright', 'credits' or 'license' for more information
