@@ -33,7 +33,7 @@ public:
     }
 };
 // module(name, variablle) - match the module's name given in CMakelists matched the PYBIND11_MODULE macro
-PYBIND11_MODULE(mod_name, handle){
+PYBIND11_MODULE(my_mod, handle){
     handle.doc() = "This is setting docstring for module.";
     handle.def("some_fn_in_python", &some_fn); 
 
@@ -56,9 +56,9 @@ drwxrwxr-x 4 kalaivani kalaivani 4.0K Jan  4 17:42 ..
 drwxrwxr-x 5 kalaivani kalaivani 4.0K Jan  4 17:45 CMakeFiles
 -rw-rw-r-- 1 kalaivani kalaivani 1.8K Jan  4 17:43 cmake_install.cmake
 -rw-rw-r-- 1 kalaivani kalaivani 5.1K Jan  4 17:43 Makefile
--rwxrwxr-x 1 kalaivani kalaivani 276K Jan  4 17:45 mod_name.cpython-310-x86_64-linux-gnu.so
+-rwxrwxr-x 1 kalaivani kalaivani 276K Jan  4 17:45 my_mod.cpython-310-x86_64-linux-gnu.so
 drwxrwxr-x 3 kalaivani kalaivani 4.0K Jan  4 17:43 pybind11
-this file : mod_name.cpython-310-x86_64-linux-gnu.so is our module and it behave like a .py file
-in ipython3, try import mod_name (mod_name is the name we gave for our module in Cmakelists and the in main.cpp)
+this file : my_mod.cpython-310-x86_64-linux-gnu.so is our module and it behave like a .py file
+in ipython3, try import my_mod (my_mod is the name we gave for our module in Cmakelists and the in main.cpp)
 
 */

@@ -1,3 +1,7 @@
 pybind11/
 OpenCL-CLHPP/
 OpenCL-ICD-Loader/
+Cpp_common/
+CMakeLists.txt
+build/
+ref.txt
